@@ -1,25 +1,30 @@
  <!DOCTYPE html>
 <html>
     <head>
-        
-        <title>
-            TO-do Appliction
-        </title>
+        <title>TO-do Appliction</title>
     </head>
     <body>
-        <h1>TO-DO Appliction</h1>
-        <input type="text">
-        <button value="submit" onclick="addItems()">submit</button>
+
+        <div class="formContainer">
+            <form action="/" method="POST">
+                <h1>TO-DO Application</h1>
+                <input type="text" id="input">
+                <button type="submit" onclick="additems()">Submit</button>
+            </form>
+        </div>
+    
 
         <div class="item-container">
             <h2>Your Items</h3>
-            <div class="items"></div>
+            <div class="items">
+            <li id="items"></li>
+            </div>
         </div>
-      
-        <p id="demo"></p>
-
-
-    <script src="home.js"></script>
+    <script >
+        const itemContainr=document.getElementById('items')
+const item=document.getElementById('input').value ;
+itemContainr.innerText='hi';
+    </script>
     </body>
 </html> 
 
